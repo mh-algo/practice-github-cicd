@@ -1,8 +1,7 @@
 name: Missing share data
-run-name: Run by @${{ github.actor }}
 on: push
 jobs:
-  print:
+  share:
     runs-on: ubuntu-latest
     steps:
       - run: export RESULT="hello"
