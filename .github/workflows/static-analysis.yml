@@ -2,9 +2,9 @@ name: Static analysis
 on:
   pull_request:
     paths: ['.github/workflows/*.ya?ml']
-  defaults:
-    run:
-      shell: bash
+defaults:
+  run:
+    shell: bash
 concurrency:
   group: ${{ github.workflows }}-${{ github.ref }}
   cancel-in-progress: true
